@@ -18,7 +18,6 @@ package br.com.beaglesampleBackend.controller
 
 import br.com.beaglesampleBackend.service.FirstScreenBeagleService
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController

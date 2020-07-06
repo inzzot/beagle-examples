@@ -32,7 +32,8 @@ class FirstScreenBeagleBuilder : ScreenBuilder {
             child = Container(
                     children = listOf(
                             Text(
-                                    text = "Hello Beagle"
+                                    text = "Hello Beagle",
+                                    styleId = "Title.Text.Orange"
                             ).applyStyle(
                                     Style(
                                             margin = EdgeValue(
@@ -45,7 +46,8 @@ class FirstScreenBeagleBuilder : ScreenBuilder {
                                     text = "Beagle is a cross-platform framework which provides usage of the " +
                                             "Server-Driven UI concept, natively in iOS, Android and Web applications." +
                                             "By using Beagle, your team could easily change application's layout and" +
-                                            " data by just changing backend code."
+                                            " data by just changing backend code.",
+                                    styleId = "Description.Text.Orange"
                             ).applyStyle(
                                     Style(
                                             margin = EdgeValue(

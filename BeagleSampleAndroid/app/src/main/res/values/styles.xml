@@ -24,4 +24,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Title.Text.Orange" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">20sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Description.Text.Orange" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="Design.System.Text.Default" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>
