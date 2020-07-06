@@ -14,24 +14,19 @@
 * limitations under the License.
 */
 
+import UIKit
 import Beagle
-import Foundation
 
-class BeagleConfig {
-    static func config() {
-
-        let theme = AppTheme(styles: [
-            "Title.Text.Orange": Styles.titleTextStyle,
-            "Description.Text.Orange": Styles.descriptionTextStyle
-        ])
-
-        let dependencies = BeagleDependencies()
-        dependencies.theme = theme
-        dependencies.urlBuilder = UrlBuilder(
-            baseUrl: URL(string: "http://localhost:8080")
-        )
-        Beagle.dependencies = dependencies
+struct Styles {
+    
+    static func titleTextStyle() -> (UITextView?) -> Void {
+        return BeagleStyle.text(font: UIFont.init(name: "Courier", size: 20) ?? UIFont.systemFont(ofSize: 20), color: .orange)
+    }
+    
+    static func descriptionTextStyle() -> (UITextView?) -> Void {
+        return BeagleStyle.text(font: UIFont.init(name: "Courier", size: 15) ?? UIFont.systemFont(ofSize: 15), color: .orange)
     }
 }
+
 
 
